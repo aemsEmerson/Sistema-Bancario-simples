@@ -1,43 +1,46 @@
 public class Conta {
-    private int number;
-    private String name;
-    private double balance;
+    private int numero;
+    private String nome;
+    private double saldo;
 
     public Conta(){
 
     }
-    public Conta(int number, String name){
-        this.number = number;
-        this.name = name;
+    public Conta(int numero, String nome){
+        this.numero = numero;
+        this.nome = nome;
     }
-    public Conta(int number, String name, double inicialDeposit) {
-        this.number = number;
-        this.name = name;
-        deposit(inicialDeposit);
-    }
-    public int getNumber() {
-        return number;
-    }
-  
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public double getBalance() {
-        return balance;
+    public Conta(int numero, String nome, double depositoInicial) {
+        this.numero = numero;
+        this.nome = nome;
+        deposito(depositoInicial);
     }
     
-    public void deposit(double value){
-        balance += value;
+
+    public int getNumero() {
+        return numero;
     }
-    public void withDraw(double value){
-        balance -= (value + 5.0);
+   
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public double getSaldo() {
+        return saldo;
+    }
+    
+
+    public void deposito(double valor){
+        saldo += valor;
+    }
+    public void saque(double valor){
+        saldo -= (valor + 5.0);
     }
     @Override
     public String toString() {
-        return "conta: "+ number + ", nome: " + name + ", Saldo: R$" + String.format("%.2f", balance);
+        return "conta: "+ numero + ", nome: " + nome + ", Saldo: R$" + String.format("%.2f", saldo);
     } 
 
     
