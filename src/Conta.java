@@ -33,10 +33,18 @@ public class Conta {
     
 
     public void deposito(double valor){
-        saldo += valor;
+        if(valor > 0){
+            saldo += valor;
+        } else {
+            System.out.println("Valor de depósito Inválido.");
+        }
     }
     public void saque(double valor){
-        saldo -= (valor + 5.0);
+        if(valor > 0 && valor <= saldo){
+            saldo -= (valor + 5.0);
+        } else {
+            System.out.println("Saldo insuficiente ou valor Inválido.");
+        }
     }
     @Override
     public String toString() {
