@@ -13,7 +13,7 @@ public class Conta {
     public Conta(int numero, String nome, double depositoInicial) {
         this.numero = numero;
         this.nome = nome;
-        deposito(depositoInicial);
+        this.saldo = depositoInicial;
     }
     
 
@@ -40,7 +40,7 @@ public class Conta {
     }
     @Override
     public String toString() {
-        return "conta: "+ numero + ", nome: " + nome + ", Saldo: R$" + String.format("%.2f", saldo);
+        return String.format("Conta: %d, Nome: %s, Saldo: R$%.2f", numero, nome, saldo);
     } 
 
     

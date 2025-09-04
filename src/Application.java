@@ -23,6 +23,23 @@ public class Application {
             conta = new Conta(numeroConta, nome);
         }
         
+        System.out.println("Dados da Conta:");
+        System.out.println(conta);
+
+        System.out.println();
+        System.out.print("Digite um valor para fazer um deposito: ");
+        double deposito = sc.nextDouble();
+        conta.deposito(deposito);
+
+        System.out.println("Atualizando...");
+        System.out.println(conta);
+
+        System.out.println();
+        System.out.print("Agora faça um saque: ");
+        double saque = sc.nextDouble();
+        conta.saque(saque);
+
+        System.out.println("Atualizando...");
         System.out.println(conta);
 
         sc.close();
