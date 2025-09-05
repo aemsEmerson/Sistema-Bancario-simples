@@ -21,9 +21,9 @@ O programa simula a criação de uma conta bancária, permitindo **cadastro, dep
 ---
 
 ## 📂 Estrutura do Projeto
-Bancario/
-├── src/
-│   ├── Conta.java         # Classe que representa a conta bancária
+Bancario/\
+├── src/\
+│   ├── Conta.java         # Classe que representa a conta bancária\
 │   └── Application.java   # Classe principal (executável)
 
 ---
@@ -35,29 +35,50 @@ Bancario/
    git clone https://github.com/aemsEmerson/Sistema-Bancario-simples.git
 
 2. Entre no diretório do Projeto:
-cd sistema-bancario/src
+   ```bash
+   cd sistema-bancario/src
 
-3. Compile os arquivos:
-javac Conta.java Application.java
+4. Compile os arquivos:
+   ```bash
+   javac Conta.java Application.java
 
-4. Execute o programa:
-java Application
+6. Execute o programa:
+   ```bash
+   java Application
 
 🖥️ Exemplo de uso
 
-Digite o Numero da conta: 1212\
-Digite o nome do Cliente: Antonio Silva\
-Deseja fazer um deposito inicial? (s/n): s\
-Digite o valor do deposito: 20000
+      Digite o Numero da conta: 1212
+      Digite o nome do Cliente: Antonio Silva
+      Deseja fazer um deposito inicial? (s/n): s
+      Digite o valor do deposito: 20000
+      
+      Dados da Conta:
+      Conta: 1212, Nome: Antonio Silva, Saldo: R$20000.00
+      
+      Digite um valor para fazer um deposito: 5
+      Atualizando...
+      Conta: 1212, Nome: Antonio Silva, Saldo: R$20005.00
+      
+      Agora faça um saque: 30000
+      Atualizando...
+      Saldo insuficiente ou valor inválido.
+      
+      Conta: 1212, Nome: Antonio Silva, Saldo: R$20005.00
 
-Dados da Conta:\
-Conta: 1212, Nome: Antonio Silva, Saldo: R$20000.00
+⸻
 
-Digite um valor para fazer um deposito: 5\
-Atualizando...\
-Conta: 1212, Nome: Antonio Silva, Saldo: R$20005.00
+📚 Aprendizados
 
-Agora faça um saque: 30000\
-Atualizando...\
-Saldo insuficiente ou valor inválido.\
-Conta: 1212, Nome: Antonio Silva, Saldo: R$20005.00
+Este projeto foi desenvolvido para reforçar:\
+	•	Criação de classes em Java\
+	•	Encapsulamento de atributos\
+	•	Uso de construtores sobrecarregados\
+	•	Operações básicas de entrada e saída
+
+⸻
+
+📄 Licença
+
+Este projeto é apenas para estudo e prática, sem fins comerciais.\
+Sinta-se à vontade para clonar, usar e melhorar! 🚀
